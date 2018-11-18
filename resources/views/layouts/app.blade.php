@@ -9,13 +9,18 @@
     <title> Laravel 美团</title>
     <!-- 样式 -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <style>
+        html,body{
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-<el-container id="app">
+<el-container id="app" class="layout-default" style="height: 100%">
 
     <!-- 头部开始-->
-    <el-header>
-        Header
+    <el-header style="padding:0">
+        <my-header/>
     </el-header>
     <!-- 头部结束-->
 
@@ -33,3 +38,4 @@
 <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>
+
